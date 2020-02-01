@@ -4,7 +4,7 @@ import { Component, Input } from '@angular/core';
   selector: 'fab',
   template: `
           <div class="button-container" [ngClass]="{'collapsed': !showFiller}">
-            <mat-icon>home</mat-icon>
+            <mat-icon>arrow_left</mat-icon>
           </div>
         `,
   styleUrls: ['./fab.component.scss']
