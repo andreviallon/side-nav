@@ -2,9 +2,17 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: `
+    <fab [showFiller]="showFiller"></fab>
+    <side-nav [opened]="true" [showFiller]="showFiller" (toggleShowFiller)="onToggleShowFiller()"></side-nav>
+  `,
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'side-nav';
+  showFiller = true;
+
+  onToggleShowFiller() {
+    console.log('this.showFiller', this.showFiller);
+    this.showFiller = !this.showFiller;
+  }
 }

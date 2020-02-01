@@ -1,0 +1,46 @@
+mat-drawer-container {
+  height: 100vh;
+}
+
+.example-container {
+  height: 100vh;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  width: 70px;
+  padding: 20px;
+  background-color: #1D86BC;
+  transition: width 0.09s ease-in-out;
+  -webkit-transition: width 0.09s ease-in-out;
+  -moz-transition: width 0.09s ease-in-out;
+  -ms-transition: width 0.09s ease-in-out;
+  -o-transition: width 0.09s ease-in-out;
+}
+
+.expanded {
+  width: 220px;
+}
+
+.hide {
+  display: none;
+}
+
+mat-drawer-content {
+  transition: margin-left 0.09s ease-in-out;
+  -webkit-transition: margin-left 0.09s ease-in-out;
+  -moz-transition: margin-left 0.09s ease-in-out;
+  -ms-transition: margin-left 0.09s ease-in-out;
+  -o-transition: margin-left 0.09s ease-in-out;
+}
+
+p {
+  color: white;
+}
